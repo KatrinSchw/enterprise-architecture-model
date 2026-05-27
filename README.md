@@ -29,7 +29,7 @@ ArchiMate model and project deliverables for the TUM BIE *Enterprise Architectur
 ```
 
 ### `model/`
-The ArchiMate model itself, serialised by Archi's **coArchi** collaboration plugin. **Do not edit these files by hand** — they are managed by Archi when you commit/push from inside the tool.
+The ArchiMate model itself, serialised by Archi's **coArchi** collaboration plugin (one XML file per element / relationship / view). Most teammates work on the model **through Archi** and let coArchi commit/push for them. Direct XML edits authored by Claude (via the git workflow on a branch) are also expected — see "Working with the ArchiMate model" below for the sync rules that keep both workflows compatible.
 
 The two views required for submission:
 1. **Abstract view** — whole-architecture overview of ArchiHotel
@@ -55,11 +55,18 @@ This repo is connected to [Archi](https://www.archimatetool.com/) via the **coAr
 2. Install the coArchi plugin: `Help → Install New Software → coArchi update site`.
 3. In Archi: `File → Open Model from Collaboration Workspace → Clone` and point at this repo URL.
 
-**Daily workflow (all inside Archi, not the terminal):**
+**Daily workflow for teammates working in Archi:**
 - Refresh others' changes: model toolbar → **Refresh**.
 - Push your changes: **Commit & Push** with a short message.
 
-Avoid editing `model/*.xml` outside Archi — coArchi rebuilds them and your hand edits will be overwritten.
+**When Claude is also editing the model:**
+Claude works in the terminal on a feature branch — generating element / relationship / view XML files directly under `model/`. To avoid coArchi clobbering those edits with stale in-memory state:
+
+1. **Before opening Archi**, always `git pull` (or use Archi's *Refresh* if the branch is already merged).
+2. **Before starting a Claude session**, the person who's about to talk to Claude pings the team in Slack/WhatsApp so nobody is mid-edit in Archi. Claude works on a branch ending in `-xml`; the branch is reviewed in Archi (open the branch → visually inspect) before being merged to `master`.
+3. **Never have Archi open with unsaved changes while Claude pushes** to the same branch you're tracking — coArchi will then overwrite Claude's commit on its next save. If this happens, recover via `git reflog` and re-merge.
+
+The XML format is plain `archimate:*` elements; coArchi reads any well-formed Archi XML, so hand-authored edits round-trip cleanly as long as the IDs and `href` references are stable.
 
 ## Submission packaging
 

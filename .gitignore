@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Archi temp / backup files
+*.archimate.bak
+*.archimate~
+.archi/
+
+# Final submission archives — regenerated at submission time, not versioned
+C2F1G*.zip
+C2F1G*.rar
+
+# Editor / OS junk
+.idea/
+.vscode/
+Thumbs.db

@@ -9,7 +9,7 @@
       targetConnections="id-8120e220194c52d8bd0deb87e1e51539 id-3f7cbf7d2d505f00b346fb08a4abc411 id-0dfd65c8fd7b5826a44e13dc54a704a4 id-a49955a9371559008d517d519e293833 id-bc50a4b26c4158958e077fa493eeb486 id-499ea73e1e40508cb1672438db61ec1f">
     <bounds
         x="-180"
-        y="20"
+        y="30"
         width="140"
         height="55"/>
     <archimateElement
@@ -39,7 +39,7 @@
           href="AssignmentRelationship_id-1b62b776ded15e22ae286343747caed3.xml#id-1b62b776ded15e22ae286343747caed3"/>
     </sourceConnections>
     <bounds
-        x="80"
+        x="240"
         y="30"
         width="140"
         height="55"/>
@@ -197,8 +197,8 @@
           href="ServingRelationship_id-c7c9b126e8885ce49cf9c912c503ebe6.xml#id-c7c9b126e8885ce49cf9c912c503ebe6"/>
     </sourceConnections>
     <bounds
-        x="80"
-        y="220"
+        x="-144"
+        y="228"
         width="140"
         height="55"/>
     <archimateElement
@@ -219,8 +219,8 @@
           href="ServingRelationship_id-b87a861e16cc5ea5995fc49ecd5497b1.xml#id-b87a861e16cc5ea5995fc49ecd5497b1"/>
     </sourceConnections>
     <bounds
-        x="250"
-        y="220"
+        x="108"
+        y="228"
         width="140"
         height="55"/>
     <archimateElement
@@ -396,8 +396,8 @@
           href="CompositionRelationship_id-bf4dd742e31858ebbe1542585340257f.xml#id-bf4dd742e31858ebbe1542585340257f"/>
     </sourceConnections>
     <bounds
-        x="80"
-        y="350"
+        x="-59"
+        y="360"
         width="140"
         height="55"/>
     <archimateElement
@@ -418,7 +418,7 @@
           href="CompositionRelationship_id-22a0b48a2ebc5bcab8289039a26b09a5.xml#id-22a0b48a2ebc5bcab8289039a26b09a5"/>
     </sourceConnections>
     <bounds
-        x="250"
+        x="312"
         y="350"
         width="140"
         height="55"/>

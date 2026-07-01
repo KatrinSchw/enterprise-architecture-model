@@ -1,0 +1,12 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="RFID"
+    id="id-32d96405d26344658e34c766145f41f1">
+  <source
+      xsi:type="archimate:BusinessObject"
+      href="BusinessObject_id-bfcfaf9a3e8543628067959009bbf967.xml#id-bfcfaf9a3e8543628067959009bbf967"/>
+  <target
+      xsi:type="archimate:Device"
+      href="Device_id-fb3e3b05bdd641aebfa82c653ae7a2f6.xml#id-fb3e3b05bdd641aebfa82c653ae7a2f6"/>
+</archimate:AssociationRelationship>

@@ -671,6 +671,21 @@
         id="id-5d42f27520034c68be45bdfc2ec19f88"
         source="id-76cf69dd9e474de1832d78e5d01f6e23"
         target="id-1e94e149affc475eb96738a9766cdb32">
+      <bendpoints
+          startX="720"
+          startY="107"
+          endX="384"
+          endY="-519"/>
+      <bendpoints
+          startX="732"
+          startY="731"
+          endX="396"
+          endY="105"/>
+      <bendpoints
+          startX="348"
+          startY="731"
+          endX="12"
+          endY="105"/>
       <archimateRelationship
           xsi:type="archimate:AccessRelationship"
           href="AccessRelationship_id-377d531b2202531b8effc561e1e639df.xml#id-377d531b2202531b8effc561e1e639df"/>
